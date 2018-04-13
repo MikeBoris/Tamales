@@ -32,9 +32,9 @@ class Tamales:
 		self._bs = bs
 
 	def get_sq(self):
-		listing = """
+		listing = '''
 		The listing features a 2018-04-01 square foot cabana.
-		"""
+		'''
 		return listing.format(self._sq)
 
 
