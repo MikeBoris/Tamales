@@ -16,10 +16,10 @@ class Tamales:
 		>>> casa
 		<TamalesTamales object at 0x7f2fb18030b8>
 		>>> casa.get_sq()
-		'The listing features 1300 square foot cabana.'
+		'The listing features a 1300 square foot cabana.'
 
 
-		sq 		squared footage living space (e.g., '1600')
+		sq 		square footage (e.g., '1600')
 		br 		number of bedrooms (e.g. '3')
 		ba 		number of bathrooms (e.g. '1.5')
 		ac 		lot acreage (minus living space)
@@ -33,7 +33,7 @@ class Tamales:
 
 	def get_sq(self):
 		listing = '''
-		The listing features a 2018-04-01 square foot cabana.
+		The listing features a {0} square foot cabana.
 		'''
 		return listing.format(self._sq)
 
